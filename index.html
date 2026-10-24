@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>$YUUGE — The Yugest Coin On The Chain</title>
+<meta name="description" content="$YUUGE is a pre-launch memecoin on Solana. 0% tax, 1B supply, one target: x100.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Chakra+Petch:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="yuge">
+  <canvas id="stars"></canvas><div class="vig"></div><div class="scan"></div>
+  <div id="cur"></div><div id="curTag">BUY</div><div id="toast">COPIED</div>
+
+  <div class="top"><div class="wrap">
+    <a class="brand" href="#top"><img class="logoA" alt="$YUUGE"><span class="wm">YUUGE</span></a>
+    <nav class="nav">
+      <a href="#about">About</a><a href="#chains">Chains</a><a href="#token">Token</a><a href="#road">Road</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="soc">
+      <a href="#" class="hot"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L6 22H3l7.4-8.5L2.5 2H9l4.7 6.9L18.9 2z"/></svg></a>
+      <a href="#" class="hot"><svg viewBox="0 0 24 24"><path d="M21.8 3.4 2.9 10.6c-1 .4-1 1.8.1 2.1l4.6 1.4 1.7 5.3c.3.9 1.4 1.1 2 .4l2.5-2.5 4.6 3.4c.8.6 1.9.2 2.1-.8l3-14.9c.2-1-.8-1.9-1.7-1.6z"/></svg></a>
+      <a href="#" class="hot"><svg viewBox="0 0 24 24"><path d="M4 18h3V9H4v9zm6 0h3V4h-3v14zm6 0h3v-6h-3v6z"/></svg></a>
+    </div>
+    <a class="btn btn-o btn-sm hot" id="buyTop" href="#buy">Buy</a>
+  </div></div>
+
+  <div class="hero" id="top"><div class="wrap">
+    <div class="badge"><span class="dot"></span> PRE-LAUNCH · SOLANA</div>
+
+    <div class="emblem" id="emblem">
+      <svg class="coin" viewBox="0 0 300 300" aria-hidden="true">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD35C"/><stop offset=".5" stop-color="#E6B123"/><stop offset="1" stop-color="#B98713"/></linearGradient>
+          <radialGradient id="g2" cx=".5" cy=".35" r=".7"><stop offset="0" stop-color="#1d2a3a"/><stop offset="1" stop-color="#0a1017"/></radialGradient>
+        </defs>
+        <g class="rays" opacity=".55"><g stroke="#E6B123" stroke-width="2">
+          <line x1="150" y1="18" x2="150" y2="42"/><line x1="150" y1="258" x2="150" y2="282"/>
+          <line x1="18" y1="150" x2="42" y2="150"/><line x1="258" y1="150" x2="282" y2="150"/>
+          <line x1="57" y1="57" x2="74" y2="74"/><line x1="226" y1="226" x2="243" y2="243"/>
+          <line x1="243" y1="57" x2="226" y2="74"/><line x1="74" y1="226" x2="57" y2="243"/>
+        </g></g>
+        <circle cx="150" cy="150" r="128" fill="url(#g1)"/>
+        <circle cx="150" cy="150" r="128" fill="none" stroke="#FFE28A" stroke-width="2"/>
+        <circle cx="150" cy="150" r="128" fill="none" stroke="#8a6410" stroke-width="10" stroke-dasharray="6 8" opacity=".55"/>
+        <circle cx="150" cy="150" r="108" fill="url(#g2)"/>
+        <circle cx="150" cy="150" r="108" fill="none" stroke="#E6B123" stroke-width="2"/>
+        <text x="150" y="252" text-anchor="middle" font-family="'Press Start 2P',monospace" font-size="13" fill="#E6B123" letter-spacing="2">$YUUGE</text>
+      </svg>
+      <div id="charL">
+        <img class="pose on" id="pIdle" alt="YUUGE mascot">
+        <img class="pose" id="pWave" alt="YUUGE mascot waving">
+        <img class="pose" id="pJump" alt="YUUGE mascot celebrating">
+      </div>
+      <div class="bubble" id="bubble">YUUGE!</div>
+    </div>
+
+    <div class="bannerWrap">
+      <img id="bannerImg" alt="$YUUGE banner">
+      <h1 id="h1fb">THE YUGEST COIN<br>ON THE CHAIN</h1>
+    </div>
+    <h2>$YUUGE</h2>
+    <p class="tag">Zero utility. Zero tax. Maximum noise. The first memecoin that runs purely on vibes, volume and an unhealthy obsession with the x100.</p>
+
+    <div class="cta">
+      <a class="btn btn-o hot" id="buyMain" href="#buy">Buy $YUUGE</a>
+      <a class="btn btn-g hot" href="#about">Whitepaper</a>
+    </div>
+
+    <div class="cdown">
+      <div><b id="cd">00</b><span>days</span></div><div><b id="ch">00</b><span>hours</span></div>
+      <div><b id="cm">00</b><span>min</span></div><div><b id="cs">00</b><span>sec</span></div>
+    </div>
+
+    <div class="chip hot" id="chip"><span>CA</span><code id="ca">YuUgE7xK2mB9pQ1zXyNpn4wC7RM9DA7vQwErTyUiOpAs</code></div>
+  </div></div>
+
+  <div class="ticker"><div class="track" id="track"></div></div>
+  <div class="walkband"><img class="walker" id="walker" alt=""></div>
+
+  <section class="blk" id="about"><div class="wrap">
+    <div class="kick rev">features</div>
+    <h2 class="head rev">+ THE YUGEST MEMECOIN THE CHAIN HAS EVER SEEN</h2>
+    <p class="sub rev">No VC allocation games. No unlock cliffs. Just a character, a chart and a community that refuses to sell.</p>
+    <div class="grid3">
+      <div class="card rev"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5zm0 20 10-5-4-2-6 3-6-3-4 2 10 5z"/></svg></div>
+        <h3>BUY AND HOLD</h3><p>One click, one wallet, one conviction. No presale, no whitelist, no permission needed to join the cult.</p><img class="mini" id="mini1" alt=""></div>
+      <div class="card rev"><div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>MEME AND EARN</h3><p>Raid posts, post the mascot, farm the timeline. The most relentless memers get the loudest bags.</p><img class="mini" id="mini2" alt=""></div>
+      <div class="card rev"><div class="ico"><svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm-8 2a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm8 2c-2.7 0-8 1.3-8 4v3h16v-3c0-2.7-5.3-4-8-4zm-8 1c-2.2 0-6 1-6 3.5V21h5v-3c0 1 .5 1.9 1.4 2.6-.1 0-.3.1-.4.1z"/></svg></div>
+        <h3>COMMUNITY TAKEOVER</h3><p>Every holder is a founder. Telegram, X, group chats — the army recruits itself, 24/7.</p><img class="mini" id="mini3" alt=""></div>
+    </div>
+  </div></section>
+
+  <section class="blk" id="chains" style="padding-top:0"><div class="wrap">
+    <div class="chains rev"><h3>SUPPORTED &amp; PLANNED CHAINS</h3>
+      <div class="badges">
+        <div class="bdg live"><span class="d"></span>SOLANA</div><div class="bdg"><span class="d"></span>BASE</div>
+        <div class="bdg"><span class="d"></span>ETHEREUM</div><div class="bdg"><span class="d"></span>BNB CHAIN</div><div class="bdg"><span class="d"></span>SUI</div>
+      </div>
+      <div style="margin-top:22px"><a class="btn btn-b hot" href="#">Join the Telegram</a></div>
+    </div>
+  </div></section>
+
+  <section class="blk" id="token" style="padding-top:0"><div class="wrap">
+    <div class="x100 rev">
+      <div class="kick" style="margin-bottom:14px">the thesis</div>
+      <div class="big">x100</div>
+      <h2 class="head" style="font-size:13px;margin-top:18px">NOT A PROMISE. <em>A MINDSET.</em></h2>
+      <p class="sub" style="margin-top:12px">A 1B supply means the only way up is volume. Early holders are the ones who get to tell the story later.</p>
+      <div class="stats">
+        <div class="stat"><b>1B</b><span>total supply</span></div>
+        <div class="stat"><b>0%</b><span>buy / sell tax</span></div>
+        <div class="stat"><b>x100</b><span>launch target</span></div>
+      </div>
+      <img class="peek" id="peek" alt="">
+    </div>
+  </div></section>
+
+  <section class="blk" style="padding-top:0"><div class="wrap">
+    <div class="kick rev">tokenomics</div>
+    <h2 class="head rev">SUPPLY, SPLIT <em>SIMPLE</em></h2>
+    <div class="tok">
+      <div class="donutBox rev">
+        <svg viewBox="0 0 200 200" width="200" height="200">
+          <circle cx="100" cy="100" r="76" fill="none" stroke="#0b1219" stroke-width="24"/>
+          <circle id="arc1" cx="100" cy="100" r="76" fill="none" stroke="#FC9931" stroke-width="24" stroke-dasharray="0 477"/>
+          <circle id="arc2" cx="100" cy="100" r="76" fill="none" stroke="#E6B123" stroke-width="24" stroke-dasharray="0 477" stroke-dashoffset="-239"/>
+          <circle id="arc3" cx="100" cy="100" r="76" fill="none" stroke="#1A6AFF" stroke-width="24" stroke-dasharray="0 477" stroke-dashoffset="-358"/>
+          <circle id="arc4" cx="100" cy="100" r="76" fill="none" stroke="#7E8D9E" stroke-width="24" stroke-dasharray="0 477" stroke-dashoffset="-430"/>
+        </svg>
+        <div class="mid"><b>1B</b><span>SUPPLY</span></div>
+      </div>
+      <div class="legend rev">
+        <div><i style="background:#FC9931"></i>Liquidity &amp; DEX<b>50%</b></div>
+        <div><i style="background:#E6B123"></i>Community &amp; airdrops<b>25%</b></div>
+        <div><i style="background:#1A6AFF"></i>Marketing &amp; CEX<b>15%</b></div>
+        <div><i style="background:#7E8D9E"></i>Team (locked)<b>10%</b></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="blk" id="road" style="padding-top:0"><div class="wrap">
+    <div class="kick rev">roadmap</div>
+    <h2 class="head rev">THE ROAD TO <em>YUUGE</em></h2>
+    <div class="road">
+      <div class="step now rev"><h4>PHASE 01 · NOW</h4><p>Contract deployed, site live, Telegram open, memes loaded. Pre-launch hype phase.</p></div>
+      <div class="step rev"><h4>PHASE 02 · LAUNCH</h4><p>Fair launch on Solana, LP burned, renounced contract, chart live from minute one.</p></div>
+      <div class="step rev"><h4>PHASE 03 · VIRAL</h4><p>Raid squads, meme contests, KOL wave, first trend on the timeline.</p></div>
+      <div class="step rev"><h4>PHASE 04 · x100</h4><p>CEX listings, cross-chain expansion, and the screenshot everyone regrets missing.</p></div>
+    </div>
+  </div></section>
+
+  <section class="blk" id="faq" style="padding-top:0"><div class="wrap">
+    <div class="kick rev">faq</div>
+    <h2 class="head rev">QUESTIONS, <em>ANSWERED</em></h2>
+    <div class="faq" id="faqList"></div>
+  </div></section>
+
+  <section class="blk" id="buy" style="padding-top:0"><div class="wrap">
+    <div class="band rev">
+      <img class="avatar" id="avatar" alt="$YUUGE">
+      <h3>READY FOR THE <em>YUGEST</em> x100?</h3>
+      <p class="sub" style="margin-top:8px">Connect a wallet, swap SOL, become early. That is the whole tutorial.</p>
+      <div style="display:flex;gap:11px;justify-content:center;margin-top:22px;flex-wrap:wrap">
+        <a class="btn btn-o hot" id="buyBand" href="#">Buy on Raydium</a>
+        <a class="btn btn-g hot" href="#">Add to Phantom</a>
+      </div>
+    </div>
+  </div></section>
+
+  <footer><div class="wrap">
+    <div class="frow">
+      <a class="brand" href="#top"><img class="logoA" alt="$YUUGE"><span class="wm">YUUGE</span></a>
+      <div class="flinks"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Disclaimer</a><a href="#faq">FAQ</a><a href="#">Contact</a></div>
+      <div class="soc">
+        <a href="#" class="hot"><svg viewBox="0 0 24 24"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L6 22H3l7.4-8.5L2.5 2H9l4.7 6.9L18.9 2z"/></svg></a>
+        <a href="#" class="hot"><svg viewBox="0 0 24 24"><path d="M21.8 3.4 2.9 10.6c-1 .4-1 1.8.1 2.1l4.6 1.4 1.7 5.3c.3.9 1.4 1.1 2 .4l2.5-2.5 4.6 3.4c.8.6 1.9.2 2.1-.8l3-14.9c.2-1-.8-1.9-1.7-1.6z"/></svg></a>
+      </div>
+    </div>
+    <div class="copy">$YUUGE is a memecoin with no intrinsic value and no roadmap guarantees. Do your own research.<br>Not financial advice. Pre-launch figures are targets, not promises.</div>
+  </div></footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
